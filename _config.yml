@@ -1,6 +1,7 @@
 # Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
+## WebSite: https://dscdtc.coding.me OR https://dscdtc.github.io/
 
 # Site
 title: 城 野
@@ -79,5 +80,7 @@ theme: alpha-dust
 deploy:
   type: git
   repo:
-    github: git@github.com:dscdtc/dscdtc.github.io.git,master
-    coding: git@git.coding.net:dscdtc/dscdtc.git,master
+    #github: git@github.com:dscdtc/dscdtc.github.io.git,master
+    #coding: git@git.coding.net:dscdtc/dscdtc.git,master
+    github: https://github.com/dscdtc/dscdtc.github.io.git,master
+    coding: https://git.coding.net/dscdtc/dscdtc.git,master
