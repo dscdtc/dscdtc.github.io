@@ -89,7 +89,7 @@ npm i hexo-deployer-git -S
     // 执行 gulp 命令时执行的任务
     gulp.task('default', [
         'minify-html','minify-css','minify-js'
-]);
+    ]);
 ```
 
 生成博文时执行`hexo g && gulp`就会根据`gulpfile.js`中的配置，对 public 目录中的静态资源文件进行压缩。

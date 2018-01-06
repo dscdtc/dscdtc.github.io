@@ -26,7 +26,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: README.md
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -52,7 +52,7 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -74,7 +74,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: alpha-dust
-plugins: hexo-generate-feed
+plugins: hexo-generate-feed, hexo-wordcount
 
 feed:
     type: atom
@@ -83,6 +83,16 @@ feed:
 #type 表示类型, 是 atom 还是 rss2.
 #path 表示 Feed 路径
 #limit 最多多少篇最近文章
+
+# Post wordcount display settings
+# Dependencies: https://github.com/willin/hexo-wordcount
+post_wordcount:
+  item_text: true
+  wordcount: true
+  min2read: true
+
+# Put your favicon.ico into `hexo-site/source/` directory.
+favicon: /favicon.ico
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
