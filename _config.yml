@@ -4,16 +4,16 @@
 ## WebSite: https://dscdtc.coding.me OR https://dscdtc.github.io/
 
 # Site
-title: 城 野
-subtitle:
+title: 城  野
+subtitle: subtitle
 description: blog, web, security, front-end
 author: dscdtc
-language: zh-Hans
+language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://www.dscdtc.ml
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -41,7 +41,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace:
   
 # Home page setting
@@ -74,6 +74,15 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: alpha-dust
+plugins: hexo-generate-feed
+
+feed:
+    type: atom
+    path: atom.xml
+    limit: 5
+#type 表示类型, 是 atom 还是 rss2.
+#path 表示 Feed 路径
+#limit 最多多少篇最近文章
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -83,4 +92,4 @@ deploy:
     #github: git@github.com:dscdtc/dscdtc.github.io.git,master
     #coding: git@git.coding.net:dscdtc/dscdtc.git,master
     github: https://github.com/dscdtc/dscdtc.github.io.git,master
-    coding: https://git.coding.net/dscdtc/dscdtc.git,master
+    #coding: https://git.coding.net/dscdtc/dscdtc.git,master
