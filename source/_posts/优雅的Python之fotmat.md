@@ -4,8 +4,6 @@ date: 2017-12-21 09:18:50
 tags: [Python]
 categories: Python
 ---
-# Python 优雅编程之 str.format()
-
 ![Python format()](https://dn-mhke0kuv.qbox.me/cff238212709802d1a16.png?imageView2/1/w/1304/h/734/q/85/format/webp/interlace/1)
 <!--more-->
 

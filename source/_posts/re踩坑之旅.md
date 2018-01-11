@@ -3,6 +3,7 @@ title: re踩坑之旅
 date: 2017-12-27 18:34:11
 tags: [Python]
 categories: Python
+copyright: true
 ---
 # re踩坑之旅
 
@@ -68,7 +69,7 @@ categories: Python
     > 同`re.findall`, 返回迭代器
 
   * `re.compile(pattern, flags=0)`
-    > 编译一个正则的模式(pattern), 返回模式对象
+    > 编译一个正则的模式(pattern), 创建模式对象。可以实现更有效率的匹配, 返回模式对象, 使用`re.compile()`函数进行转换后，`re.search(pattern, string)`的调用方式就转换为`pattern.search(string)`的调用方式
 
   * `re.template(pattern, flags=0)`
     > 编译一个用于正则模板的模式(pattern), 返回模式对象
@@ -147,7 +148,7 @@ Output:
 
 ## 参考链接
 
-[re源码](//Python27/Lib/re.py "//Python27/Lib/re.py"),
+[re源码](file:///C://python27/Lib/re.py "//Python27/Lib/re.py"),
 [菜鸟教程](http://www.runoob.com/regexp/regexp-syntax.html),
 [CSDN博客1](http://blog.csdn.net/u014467169/article/details/51345657),
 [CSDN博客2](http://blog.csdn.net/caroline_wendy/article/details/47065115)

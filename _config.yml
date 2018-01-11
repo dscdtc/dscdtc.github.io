@@ -74,7 +74,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: alpha-dust
-plugins: hexo-generate-feed, hexo-wordcount
+plugins: hexo-generate-feed, hexo-wordcount, hexo-helper-live2d
 
 feed:
     type: atom
@@ -90,6 +90,12 @@ post_wordcount:
   item_text: true
   wordcount: true
   min2read: true
+
+live2d:
+  model: miku
+  verticalOffset: 20 # The offset of the bottom. default: -20
+  # mobileShow: true # 是否在移动设备上显示 默认值: true
+  # mobileScaling: 0.5 # 移动设备缩放倍率 默认值: 0.5
 
 # Put your favicon.ico into `hexo-site/source/` directory.
 favicon: /favicon.ico
