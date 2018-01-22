@@ -83,11 +83,19 @@ print(max(stocks.values()))
 >>> 299.5
 ```
 
-使用`zip()`进行翻转
+* 使用`zip()`进行翻转
 
 ```py
 stocks = {'wanke':25.6,'wuliangye':32.3,'maotai':299.5,'huatai':18.6}
 new_stocks = zip(stocks.values(), stocks.keys())
+```
+
+> *若碰到比较大的字典，数据量很多很长的时候，最好用Python标准库里的itertools模块(这个模块非常有用,可以关注下)*
+
+```py
+from itertools import izip
+invert_stocks2=dict(izip(stocks.itervalues(),stocks.iterkeys()))
+print(invert_stocks2)
 ```
 
 # 字典的方法们
