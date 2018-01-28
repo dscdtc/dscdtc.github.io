@@ -1,0 +1,9 @@
+http://dscdtc.ml/Python高效编程.html
+http://dscdtc.ml/Python中的天坑-dict.html
+http://dscdtc.ml/re踩坑之旅.html
+http://dscdtc.ml/优雅的Python之fotmat.html
+http://dscdtc.ml/JS简写技巧.html
+http://dscdtc.ml/github-PullRequest-工作流程.html
+http://dscdtc.ml/GitHub-Pages-Hexo搭建博客.html
+http://dscdtc.ml/对js逻辑运算符的总结.html
+http://dscdtc.ml/hello-world.html
