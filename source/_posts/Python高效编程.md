@@ -1,10 +1,10 @@
 ---
 title: Python高效编程
-copyright: true
-password: dscdtc
 date: 2018-01-20 17:17:52
 ---
-# 记录实际编程和面试都会遇到的典型问题。
+> 本篇记录汇总实际编程和面试中都可能会遇到的典型问题。
+
+<!-- more -->
 
 ## 在列表,字典,集合中根据条件筛选数据
 
@@ -111,7 +111,7 @@ from collections import deque
 from random import randint
 
 N = randint(0,100)
-# 一个容纳5个值的队列
+## 一个容纳5个值的队列
 history = deque([],5)
 
 def guess(k):
@@ -135,6 +135,4 @@ while True:
         print(list(history))
 ```
 
-作者：dreamkong
-链接：https://juejin.im/post/5a30ffa0f265da43163d1157
-来源：掘金
+### 未完待续...

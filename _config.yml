@@ -13,9 +13,10 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.dscdtc.ml
+url: http://dscdtc.ml
 root: /
-permalink: :year/:month/:day/:title/
+# permalink: :year/:month/:day/:title/
+permalink: :title.html
 permalink_defaults:
 
 # Directory
@@ -100,12 +101,18 @@ live2d:
 # Put your favicon.ico into `hexo-site/source/` directory.
 favicon: /favicon.ico
 
+baidu_url_submit:
+  count: 100 # 提交最新的一个链接
+  host: www.dscdtc.ml # 在百度站长平台中注册的域名
+  token: gNF5GgfCAPSvKxTP # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
+  path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repo:
-    #github: git@github.com:dscdtc/dscdtc.github.io.git,master
-    #coding: git@git.coding.net:dscdtc/dscdtc.git,master
-    github: https://github.com/dscdtc/dscdtc.github.io.git,master
-    #coding: https://git.coding.net/dscdtc/dscdtc.git,master
+    github: git@github.com:dscdtc/dscdtc.github.io.git,master
+    coding: git@git.coding.net:dscdtc/dscdtc.git,master
+    # github: https://github.com/dscdtc/dscdtc.github.io.git,master
+    # coding: https://git.coding.net/dscdtc/dscdtc.git,master

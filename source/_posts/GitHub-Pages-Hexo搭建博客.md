@@ -49,6 +49,13 @@ npm i hexo-deployer-git -S
 
     使用git clone git@github.com:CrazyMilk/CrazyMilk.github.io.git拷贝仓库（默认分支为hexo）；
     在本地新拷贝的CrazyMilk.github.io文件夹下通过Git bash依次执行下列指令：npm install hexo、npm install、npm install hexo-deployer-git（记得，不需要hexo init这条指令）。
+    或者按一下命令执行:
+    ```git
+    git init
+    git remote add origin <server> #将本地文件和云端仓库映射起来。
+    git fetch --all
+    git reset --hard origin/master
+    ```
 
 # 3. 博文压缩
 

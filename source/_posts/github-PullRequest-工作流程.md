@@ -11,11 +11,11 @@ categories: Git
 2.在新开的分支上提交。
 3.提出 PR 请求维护者将你的新分支合并至原项目。
 
+<!--more-->
+
 下面是详细的命令:
 
 * 项目clone & 新建分支
-
-<!--more-->
 
 ```shell
 git clone <origin-git-address>  <project-name>

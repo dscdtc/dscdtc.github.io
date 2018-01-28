@@ -2,7 +2,7 @@
 title: 对js逻辑运算符的总结
 date: 2017-03-30 12:21:30
 tags: [Javascript]
-categories: js
+categories: Javascript
 ---
 ### 对js运算符“||”和“&&”的总结
 
