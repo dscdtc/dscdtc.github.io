@@ -1,8 +1,9 @@
 ---
 title: Python高效编程
+copyright: false
 date: 2018-01-20 17:17:52
 ---
-> 本篇记录汇总实际编程和面试中都可能会遇到的典型问题。
+# 记录实际编程和面试都会遇到的典型问题。
 
 <!-- more -->
 
@@ -111,7 +112,7 @@ from collections import deque
 from random import randint
 
 N = randint(0,100)
-## 一个容纳5个值的队列
+# 一个容纳5个值的队列
 history = deque([],5)
 
 def guess(k):
@@ -135,4 +136,83 @@ while True:
         print(list(history))
 ```
 
-### 未完待续...
+## 将多个小字符串拼接成一个大字符串
+
+```py
+#第一种(拼接项少) +
+#第二种(拼接项多) ''.join()
+list1 = ['abc','123','23','sdsa','xyz']
+''.join(list1)
+
+list2 = ['abc',123,'23',4654,'xyz']
+''.join(str(x) for x in list2)
+```
+
+## 对字符串进行左,右,居中对齐
+
+```py
+s = 'abc'
+#第一种 ljust() rjust() center()
+s.ljust(20)
+s.rjust(20,'!')
+s.center(20,"-")
+
+#第二种 format
+format(s,'<20')
+format(s,'>20')
+format(s,'^20')
+```
+
+## 设置文件的缓冲
+
+```py
+# 全缓冲
+# 默认是4096
+f = open('demo.txt','w',buffering=2048)
+f.write('-' * 2048)
+f.write('+')
+# 行缓冲
+f = open('demo1.txt','w',buffering=1)
+# 无缓冲
+f = open('demo2.txt','w',buffering=0)
+```
+
+## 为创建大量实例节省内存
+
+```py
+class Player(object):
+    def __init__(self,uid,name,status=0,level=1):
+        self.uid = uid
+        self.name = name
+        self.status = status
+        self.level = level
+        
+class Player2(object):
+    __slots__ = ['uid','name','status','level']
+    def __init__(self,uid,name,status=0,level=1):
+        self.uid = uid
+        self.name = name
+        self.status = status
+        self.level = level       
+
+p1 = Player('001','uu')
+p2 = Player2('001','uu')
+set(dir(p1)) - set(dir(p2))
+# p1比p2多了{'__dict__', '__weakref__'}
+# '__dict__'可以动态绑定
+p1.x = 123
+del p1.__dict__['x']
+
+import sys
+# 占用了320内存
+sys.getsizeof(p1.__dict__)
+
+# p2事先定义__slots__ 声明了实例属性名字的列表
+# p2就无法动态绑定 从而节省了内存
+# p2.x = 123
+```
+
+作者：dreamkong
+链接：https://juejin.im/post/5a30ffa351882506fd588b3f
+来源：掘金
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
