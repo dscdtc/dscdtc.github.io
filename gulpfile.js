@@ -25,6 +25,7 @@ gulp.task('minify-html', function() {
             removeScriptTypeAttributes: true, //删除<script>的type="text/javascript"
             removeStyleLinkTypeAttributes: true, //删除<style>和<link>的type="text/css"
             minifyJS: true, //压缩页面JS
+            minifyURLs: true, //压缩页面URL
             minifyCSS: true //压缩页面CSS
         }))
         .on('error', function(err) {
