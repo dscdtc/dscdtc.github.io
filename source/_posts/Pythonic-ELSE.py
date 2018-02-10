@@ -1,5 +1,7 @@
 ---
 title: Pythonic ELSE
+tags: [Python]
+categories: Python
 copyright: true
 date: 2018-02-09 16:11:39
 ---
