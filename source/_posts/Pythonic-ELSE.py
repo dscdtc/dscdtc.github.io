@@ -112,9 +112,9 @@ def divide(x, y):try:
 divide(5,2)
 print("*"*20)
 divide(5,0)
-result = 2.5
 
 >>>
+result = 2.5
 divide finished!
 ********************
 division by 0!
