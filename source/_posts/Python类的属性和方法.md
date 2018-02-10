@@ -1,5 +1,5 @@
 ---
-title: 类的属性和方法
+title: Python类的属性和方法
 copyright: true
 password: dscdtc
 date: 2018-02-10 10:59:47
