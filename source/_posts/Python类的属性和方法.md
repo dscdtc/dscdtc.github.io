@@ -1,5 +1,5 @@
 ---
-title: Python类的属性和方法
+title: 类的属性和方法
 copyright: true
 password: dscdtc
 date: 2018-02-10 10:59:47
@@ -53,7 +53,9 @@ Employee.__dict__: {'__module__': '__main__', 'displayCount': <function displayC
 
 | 方法 | 描述 | 调用 |
 | :--: | -----------------|------------------ |
-| `__init__(self [,args...])` | 构造函数| `obj = className(args)` |
+| `__new__(cls [, *args, **kwargs])` | override创建对象的行为 | `obj = className(args)` |
+| `__init__(self [,args...])` | 构造函数(在new之后调用) | `obj = className(args)` |
+| `__call__(self [,args...])` | 类变成一个可调用对象(模拟函数的行为) | `obj = className(args);obj();` |
 | `__del__(self)` | 析构方法, 删除一个对象 | `del obj` |
 | `__repr__(self)` | 转化为供解释器读取的形式 | `repr(obj)` |
 | `__str__(self)` | 用于将值转化为适于人阅读的形式 | `str(obj)`或`print(obj)` |
